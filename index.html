@@ -15,6 +15,22 @@
     <div class="container">
         <h1 class="display-2 my-4"> Online Dictionary</h1>
         <hr>
+         <div class="my-4 input-group">
+            <input type="text" id="word" class="form-control" placeholder="enter the word">
+            <button id="searchbtn" class="btn btn-outline-success btn" type="button">Search</button>
+        </div>
+        <div class="my-2" id="message"></div>
+        <table class="my-3 table table-danger table-responsive  table-striped table-hover">
+            <thead class="table-danger">
+                <tr>
+                    <th scope="col">Word</th>
+                    <th scope="col">Definitions</th>
+                </tr>
+            </thead>
+            <tbody id="tablehead">
+            </tbody>
+        </table>
+        <hr>
         <table class="table table-dark table-responsive table-borderless table-striped table-hover">
             <thead class="table-warning">
                 <tr>
