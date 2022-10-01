@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="index.js"></script>
@@ -15,21 +17,16 @@
     <div class="container">
         <h1 class="display-2 my-4"> Online Dictionary</h1>
         <hr>
+        <div class="simple-nav">
+            <a class="active" href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
          <div class="my-4 input-group">
             <input type="text" id="word" class="form-control" placeholder="enter the word">
             <button id="searchbtn" class="btn btn-outline-success btn" type="button">Search</button>
         </div>
         <div class="my-2" id="message"></div>
-        <table class="my-3 table table-danger table-responsive  table-striped table-hover">
-            <thead class="table-danger">
-                <tr>
-                    <th scope="col">Word</th>
-                    <th scope="col">Definitions</th>
-                </tr>
-            </thead>
-            <tbody id="tablehead">
-            </tbody>
-        </table>
         <hr>
         <table class="table table-dark table-responsive table-borderless table-striped table-hover">
             <thead class="table-warning">
