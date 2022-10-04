@@ -36,7 +36,7 @@ let searchbtn = document.getElementById("searchbtn");
         searchbtn.addEventListener('click', () => {
 
             setTimeout(() => {
-                let tableHead = document.getElementById("tablehead");
+                let tableBody = document.getElementById("tablebody");
                 let inputWord = document.getElementById("word");
                 // console.log(inputWord.value);
                 const xhr = new XMLHttpRequest();
@@ -50,6 +50,7 @@ let searchbtn = document.getElementById("searchbtn");
                             if (obj[mkey].definitions != undefined) {
                                 obj[mkey].definitions.forEach((element, index) => {
                                     for (const key in element) {
+                                        console.log(mkey);
                                         if (key === 'definition' && mkey.toLowerCase() == inputWord.value.toLowerCase()) {
                                             str += `<tr scope="row">
                                                         <td>${mkey}</td>
@@ -73,7 +74,7 @@ let searchbtn = document.getElementById("searchbtn");
                             };
 
                         }
-                        tableHead.innerHTML = str;
+                        tableBody.innerHTML = str;
                     }
                 }
                 xhr.send();
